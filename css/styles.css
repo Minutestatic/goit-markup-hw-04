@@ -345,8 +345,8 @@ address {
 .adds {
   display: flex;
 }
-.adds-item {
-  margin-bottom: 12px;
+.adds-item + .adds-item {
+  margin-top: 12px;
 }
 
 /* Button! */

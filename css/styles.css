@@ -244,23 +244,21 @@ address {
   display: flex;
   gap: 30px;
 }
-
-/* Features */
 .features-item {
   flex-basis: 270px;
 }
-.features-icon {
-  width: 270px;
-  height: 120px;
+
+/* Features */
+.features-icon-card {
+  display: flex;
+  align-items: center;
   justify-content: center;
   background-color: var(--secondary-page-color);
-  padding: 25px 100px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
+  height: 120px;
+  width: 270px;
   margin-bottom: 30px;
 }
+
 .features-title {
   color: var(--title-text-color);
   font-size: 14px;

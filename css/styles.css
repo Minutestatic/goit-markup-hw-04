@@ -179,12 +179,11 @@ address {
 .site-nav .link.current {
   color: var(--acent-text-color);
 }
+.contact-icon {
+  margin-right: 10px;
+}
 
 .contact .link {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -203,6 +202,17 @@ address {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.hero-img {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-img.jpg');
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-title {
   color: var(--withe-text-color);
@@ -229,6 +239,18 @@ address {
 /* Features */
 .features .item {
   flex-basis: 270px;
+}
+.features-icon {
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  background-color: var(--secondary-page-color);
+  padding: 25px 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 .features-title {
   color: var(--title-text-color);

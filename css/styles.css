@@ -125,7 +125,7 @@ address {
   display: flex;
   align-items: center;
 }
-.site-nav .item + .item {
+.site-nav-item + .site-nav-item {
   margin-left: 40px;
 }
 
@@ -133,13 +133,18 @@ address {
   display: flex;
   align-items: center;
 }
-.contact .item + .item {
+.contact-item + .contact-item {
   margin-left: 40px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Main content */
 /* Site logo */
-.logo {
+.header-logo {
   display: flex;
   align-self: center;
   padding-top: 24px;
@@ -158,7 +163,7 @@ address {
   color: var(--acent-text-color);
 }
 
-.site-nav .link {
+.site-nav-link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -171,19 +176,20 @@ address {
   text-decoration: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--acent-text-color);
 }
 
-.site-nav .link.current {
+.site-nav-link.current {
   color: var(--acent-text-color);
 }
+
 .contact-icon {
   margin-right: 10px;
 }
 
-.contact .link {
+.contact-link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -191,8 +197,8 @@ address {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contact .link:hover,
-.contact .link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--acent-text-color);
 }
 
@@ -237,7 +243,7 @@ address {
 }
 
 /* Features */
-.features .item {
+.features-item {
   flex-basis: 270px;
 }
 .features-icon {
@@ -339,7 +345,7 @@ address {
   margin-bottom: 28px;
 }
 
-.adds-list .link-map {
+.adds-link-map {
   color: var(--withe-text-color);
   font-style: normal;
   font-size: 14px;
@@ -348,11 +354,11 @@ address {
   letter-spacing: 0.03em;
 }
 
-.adds-list .link-map:hover,
-.adds-list .link-map:focus {
+.adds-link-map:hover,
+.adds-link-map:focus {
   background-color: var(--acent-text-color);
 }
-.adds-list .link {
+.adds-link {
   color: var(--link-footer-color);
   font-style: normal;
   font-size: 14px;
@@ -360,8 +366,8 @@ address {
   text-decoration: none;
   letter-spacing: 0.03em;
 }
-.adds-list .link:hover,
-.adds-list .link:focus {
+.adds-link:hover,
+.adds-link:focus {
   background-color: var(--acent-text-color);
 }
 .adds {

@@ -15,6 +15,7 @@
   --box-shadow-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --acent-button-color: #188ce8;
 
+  --link-icon-color: #afb1b8;
   --link-footer-color: rgba(255, 255, 255, 0.6);
 
   --main-page-color: #ffffff;
@@ -256,6 +257,7 @@ address {
   background-color: var(--secondary-page-color);
   height: 120px;
   width: 270px;
+  border-radius: 4px;
   margin-bottom: 30px;
 }
 
@@ -325,8 +327,59 @@ address {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
-  /* margin-bottom: */
+  margin-bottom: 16px;
 }
+
+/* icon-team */
+.team-social-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.team-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  fill: var(--link-icon-color);
+}
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--acent-text-color);
+  fill: var(--withe-text-color);
+}
+
+/* Clientage */
+.clientage-list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientage-link {
+  border: 1px solid var(--link-icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--link-icon-color);
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+}
+
+.clientage-link:hover,
+.clientage-link:focus {
+  fill: var(--acent-text-color);
+  border: 1px solid var(--acent-text-color);
+}
+
 /* Footer */
 .page-footer {
   background-color: var(--footer-color);

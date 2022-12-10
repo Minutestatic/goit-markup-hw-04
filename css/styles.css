@@ -16,6 +16,8 @@
   --acent-button-color: #188ce8;
 
   --link-icon-color: #afb1b8;
+  --footer-icon-color: #ffffff;
+  --footer-icon-bg-color: #43444d;
   --link-footer-color: rgba(255, 255, 255, 0.6);
 
   --main-page-color: #ffffff;
@@ -386,6 +388,10 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 
 .logo-footer {
   color: var(--withe-text-color);
@@ -397,6 +403,13 @@ address {
 
   display: inline-block;
   margin-bottom: 28px;
+}
+.adds-list {
+  margin-right: 70px;
+}
+
+.adds-item + .adds-item {
+  margin-top: 12px;
 }
 
 .adds-link-map {
@@ -424,11 +437,40 @@ address {
 .adds-link:focus {
   background-color: var(--acent-text-color);
 }
-.adds {
-  display: flex;
+
+/* Footer Social */
+
+.footer-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--withe-text-color);
+  margin-bottom: 20px;
 }
-.adds-item + .adds-item {
-  margin-top: 12px;
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--footer-icon-bg-color);
+  fill: var(--footer-icon-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:active {
+  background-color: var(--acent-text-color);
 }
 
 /* Button! */

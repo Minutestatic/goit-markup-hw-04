@@ -12,7 +12,8 @@
   --withe-text-color: #ffffff;
   --black-text-color: #000000;
 
-  --box-shadow-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --hero-background-color: rgba(47, 48, 58, 0.4);
+
   --acent-button-color: #188ce8;
 
   --link-icon-color: #afb1b8;
@@ -210,7 +211,7 @@ address {
 /* Main content */
 /* Hero */
 .hero {
-  background-color: var(--footer-color);
+  background-color: var(--hero-background-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -218,7 +219,6 @@ address {
 .hero-img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-img.jpg);
-  height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -355,7 +355,7 @@ address {
 }
 
 .team-social-link:hover,
-.team-social-link:active {
+.team-social-link:focus {
   background-color: var(--acent-text-color);
   fill: var(--withe-text-color);
 }
@@ -430,7 +430,7 @@ address {
 
 .adds-link-map:hover,
 .adds-link-map:focus {
-  background-color: var(--acent-text-color);
+  color: var(--acent-text-color);
 }
 .adds-link {
   color: var(--link-footer-color);
@@ -442,7 +442,7 @@ address {
 }
 .adds-link:hover,
 .adds-link:focus {
-  background-color: var(--acent-text-color);
+  color: var(--acent-text-color);
 }
 
 /* Footer Social */
@@ -476,7 +476,7 @@ address {
 }
 
 .footer-social-link:hover,
-.footer-social-link:active {
+.footer-social-link:focus {
   background-color: var(--acent-text-color);
 }
 
@@ -497,7 +497,7 @@ address {
 
   color: var(--withe-text-color);
   background: var(--acent-text-color);
-  box-shadow: var(--box-shadow-button);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   letter-spacing: 0.06em;
 
@@ -537,18 +537,24 @@ address {
 
 /* Portfolio.html */
 /* Main content */
-.project-list-link {
+.project-item-link {
+  display: block;
   text-decoration: none;
 }
+.project-item-link:hover,
+.project-item-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
-.project-list-title {
+.project-item-title {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
-.project-list-paragraph {
+.project-item-paragraph {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.85;
@@ -571,11 +577,6 @@ address {
 
   gap: 30px;
   flex-wrap: wrap;
-}
-.project-item:hover,
-.project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-container {

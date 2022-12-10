@@ -335,24 +335,27 @@ address {
 /* icon-team */
 .team-social-list {
   display: flex;
-  gap: 10px;
   align-items: center;
   justify-content: center;
-  margin-left: 32px;
-  margin-right: 32px;
+  gap: 10px;
 }
-
+.team-social-item {
+  width: 44px;
+  height: 44px;
+}
 .team-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 44px;
-  width: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+
   fill: var(--link-icon-color);
 }
+
 .team-social-link:hover,
-.team-social-link:focus {
+.team-social-link:active {
   background-color: var(--acent-text-color);
   fill: var(--withe-text-color);
 }
@@ -364,6 +367,10 @@ address {
   align-items: center;
   justify-content: center;
 }
+.clientage-item {
+  width: 170px;
+  height: 92px;
+}
 
 .clientage-link {
   border: 1px solid var(--link-icon-color);
@@ -371,8 +378,8 @@ address {
   align-items: center;
   justify-content: center;
   fill: var(--link-icon-color);
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   border-radius: 4px;
 }
 
@@ -524,6 +531,8 @@ address {
 .button.content:focus {
   color: var(--withe-text-color);
   background-color: var(--acent-text-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Portfolio.html */
@@ -562,6 +571,10 @@ address {
 
   gap: 30px;
   flex-wrap: wrap;
+}
+.project-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-container {
